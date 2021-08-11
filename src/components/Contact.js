@@ -45,7 +45,7 @@ const Contact = () => {
                 </div>
                 <div className="input-field">
                     <label htmlFor="age" >Your Age</label>
-                    <input pattern="^[0-9][0-9][0-9]" type="text" placeholder="Enter Your Age" id="age" value={data.age} onChange={(e)=>setData({...data, age:e.target.value})} />
+                    <input pattern="^[0-9][0-9]" type="text" placeholder="Enter Your Age" id="age" value={data.age} onChange={(e)=>setData({...data, age:e.target.value})} />
                 </div>
                 <div style={{paddingTop:"2rem"}} >
                     <FileBase64 type="file" multiple={false} 
